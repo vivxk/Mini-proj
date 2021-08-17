@@ -56,7 +56,7 @@ recog.addEventListener('result', userSpeak);
 
 recog.addEventListener('end', () => recog.start()); // start again after SR Service ends
 
-document.body.addEventListener('click', (e) => {
+document.body.addEventListener('click', (e) => { //Add Play Again button functionality
     if (e.target.id == 'play-again') {
         window.location.reload();
     }
